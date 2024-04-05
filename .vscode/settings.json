@@ -1,0 +1,4 @@
+{
+    "inference.model": "custom",
+    "inference.custom.model": "mistral"
+}
