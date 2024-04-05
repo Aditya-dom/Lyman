@@ -11,7 +11,7 @@ DeFiAnalytics is a platform that provides users with insights and analytics for 
 
 The project directory structure is organized as follows:
 
- 
+```
 DeFiAnalytics/
 │
 ├── frontend/ 		# Frontend application
@@ -65,7 +65,7 @@ DeFiAnalytics/
 │ └── ...
 │
 └── README.md 		        # Project documentation
-
+```
 ## Tru
 
 ## Installation
