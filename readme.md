@@ -73,29 +73,37 @@ DeFiAnalytics/
 To install and run the project locally, follow these steps:
 
 1. Clone the repository:
+```
 git clone 
-
+```
 2. Navigate to the project directory:
+```
 cd DeFiAnalytics
-
+```
 3. Install frontend dependencies:
+```
 cd frontend
 npm install
-
+```
 4. Install backend dependencies:
+```
 cd ../backend
 npm install
+```
 
-5. Start the frontend and backend servers:
+6. Start the frontend and backend servers:
 In one terminal window/tab
+```
 cd ../frontend
 npm start
-
-In another terminal window/tab
+```
+7. In another terminal window/tab
+```
 cd ../backend
 npm start
+```
 
-6. Access the application in your web browser at http://localhost:3000.
+9. Access the application in your web browser at http://localhost:3000.
 
 ## Usage
 
