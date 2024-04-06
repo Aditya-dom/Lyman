@@ -1,31 +1,16 @@
-import 'dio';
+// defi_service.dart
+import 'package:uniswap_dart/uniswap_dart.dart' as uni; // Example with Uniswap SDK
 
-   class EthRpcApi {
-     final Dio _http;
-     final String _url;
+class DeFiService {
+  final uni.Uniswap _uniswap;
 
-     EthRpcApi(this._url) : _http = Dio(BaseOptions(baseUrl: _url));
+  DeFiService(String routerAddress) {
+    _uniswap = uni.Uniswap(routerAddress);
+  }
 
-     Future<dynamic> sendTransaction(String fromAddress, String toAddress,
-int value, int gasPrice, int nonce) async {
-       final Map body = {
-         'jsonrpc': '2.0',
-         'method': 'eth_sendTransaction',
-         'params': [
-           {
-             'from': fromAddress,
-             'to': toAddress,
-             'value': value,
-             'gasPrice': gasPrice,
-             'nonce': nonce,
-           }
-         ],
-         'id': 1
-       };
+  Future<void> swapTokens(String fromToken, String toToken, double amount) async {
+    // Implement swap logic using Uniswap SDK or web3dart methods
+  }
 
-       final Response response = await _http.post(''); // Replace with 
-your Django backend's URL
-
-       return response.data;
-     }
-   }
+  // Add other DeFi protocol methods as needed
+}
