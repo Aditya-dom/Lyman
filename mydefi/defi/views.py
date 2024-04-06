@@ -14,10 +14,8 @@ def swap_tokens(request, token_in, desired_tokens_out):
        account = Account.create()
        private_key = account.encryptingKey.hex()
 
-weth = web3.eth.contract(address='0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 
-abi=IWETH_ABI)
-uniswapFactory = web3.eth.contract(address='0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', 
-abi=IUNISWAP_FACTORY_ABI)
+weth = web3.eth.contract(address='0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', abi=IWETH_ABI)
+uniswapFactory = web3.eth.contract(address='0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', abi=IUNISWAP_FACTORY_ABI)
 wethContractAddress = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
 tokenInAddress = token_in
 desiredTokensOut = int(desired_tokens_out)
@@ -29,5 +27,5 @@ gas_price})
 signed_tx = web3.eth.accounts.sign_transaction(transaction, private_key)
 receipt = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
 
-    return JsonResponse({'status': 'success', 'receipt': 
-    receipt.toHex()}) if receipt else JsonResponse({'status': 'error'})
+return JsonResponse({'status': 'success', 'receipt':
+                     receipt.toHex()}) if receipt else JsonResponse({'status': 'error'})
