@@ -138,23 +138,18 @@ cd ../backend
 npm install
 ```
 
-6. Start the frontend and backend servers:
+5. Start the frontend and backend servers:
 In one terminal window/tab
 ```
 cd ../frontend
 npm start
 ```
-7. In another terminal window/tab
+6. In another terminal window/tab
 ```
 cd ../backend
 npm start
 ```
 
-9. Access the application in your web browser at http://localhost:3000.
 
 ## Usage
-
 Once the application is running, you can access the DeFiAnalytics dashboard in your web browser. The dashboard provides insights and analytics for various DeFi protocols, allowing you to monitor trends, track metrics, and make informed decisions regarding your DeFi investments and strategies.
-
-
->>>>>>> 8cca301748fca511133f1424391cb79a67d12f89
