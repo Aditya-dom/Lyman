@@ -12,22 +12,22 @@ async function main() {
 
   await lock.deployed();
 
-  const Obj1 = await hh.ethers.getContractFactory("Contract1");
+  const Obj1 = await hh.ethers.getContractFactory("MyToken");
   const obj1 = await Lock.deploy(unlockTime, { value: lockedAmount });
 
   await obj1.deployed();
 
-  const Obj2 = await hh.ethers.getContractFactory("contract2");
+  const Obj2 = await hh.ethers.getContractFactory("Migrations");
   const obj2 = await Lock.deploy(unlockTime, { value: lockedAmount });
 
   await obj2.deployed();
 
-  const Obj3 = await hh.ethers.getContractFactory("Contract3");
+  const Obj3 = await hh.ethers.getContractFactory("Pool");
   const obj3 = await Lock.deploy(unlockTime, { value: lockedAmount });
 
   await obj3.deployed();
 
-  const Obj4 = await hh.ethers.getContractFactory("Contract4");
+  const Obj4 = await hh.ethers.getContractFactory("Swap");
   const obj4 = await Lock.deploy(unlockTime, { value: lockedAmount });
 
   await obj4.deployed();

@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20FlashMint.sol";
 
-contract MyToken is ERC20, ERC20Burnable, ERC20Pausable, AccessManaged, ERC20Permit, ERC20Votes, ERC20FlashMint {
+contract Pool is ERC20, ERC20Burnable, ERC20Pausable, AccessManaged, ERC20Permit, ERC20Votes, ERC20FlashMint {
     constructor(address initialAuthority)
         ERC20("MyToken", "MTK")
         AccessManaged(initialAuthority)
