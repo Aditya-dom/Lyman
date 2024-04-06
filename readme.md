@@ -113,7 +113,6 @@ DeFiAnalytics is a platform that provides users with insights and analytics for 
 ## Project Structure
 
 The project directory structure is organized as follows:
-
 ```
 DeFiAnalytics/
 │
@@ -191,8 +190,8 @@ DeFiAnalytics/
 │
 └── README.md 		        # Project documentation
 ```
-## Directory Descriptions
 
+## Directory Descriptions
 - **.vscode:** This directory contains configurations and settings for Visual Studio Code. It may include files related to workspace settings, debugging configurations, and extensions.
 - **config:** This directory typically holds project configuration files such as environment variables, database configurations, and other settings required for the project to run.
 - **defi_frontend:** This directory contains front-end components for decentralized finance (DeFi) applications. It usually includes components like buttons, navigation bars, stylesheets, and the main entry point file (index.js).
