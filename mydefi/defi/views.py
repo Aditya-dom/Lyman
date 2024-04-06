@@ -28,4 +28,4 @@ signed_tx = web3.eth.accounts.sign_transaction(transaction, private_key)
 receipt = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
 
 return JsonResponse({'status': 'success', 'receipt':
-                     receipt.toHex()}) if receipt else JsonResponse({'status': 'error'})
+                    receipt.toHex()}) if receipt else JsonResponse({'status': 'error'})
