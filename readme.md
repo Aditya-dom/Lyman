@@ -14,7 +14,6 @@ The project directory structure is organized as follows:
 ```
 DeFiAnalytics/
 │
-
 ├── .vscode
 ├── config
 ├── defi_frontend
