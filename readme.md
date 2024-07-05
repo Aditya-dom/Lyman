@@ -1,4 +1,3 @@
-=======
 DeFiAnalytics is a platform that provides users with insights and analytics for decentralized finance (DeFi) protocols across various blockchain networks. It offers a comprehensive dashboard where users can monitor and analyses metrics such as total value locked (TVL), liquidity, trading volume, yields, and other key performance indicators (KPIs) of DeFi protocols.
 
 ## Table of Contents
